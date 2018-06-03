@@ -40,7 +40,7 @@ const fingerPostStyle = (row, col, fingerPos) => {
 
 
 
-const FretBoard = ({ rows = [1, 2, 3, 4], cols = [ 1, 2 , 3, 4, 5 ], inactive = chordsInactiveStrings, open = chordsOpenStrings, fingerPositions = fingerPos }) => (
+const FretBoard = ({ rows = [1, 2, 3, 4, 5, 6], cols = [ 1, 2 , 3, 4, 5 ], inactive = chordsInactiveStrings, open = chordsOpenStrings, fingerPositions = fingerPos }) => (
     <div>
         <div style={{ display: 'flex', flexDirection: 'row', width: '250px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', flex: 0.15}}>E</div>
@@ -63,10 +63,10 @@ const FretBoard = ({ rows = [1, 2, 3, 4], cols = [ 1, 2 , 3, 4, 5 ], inactive = 
         <div style={{ display: 'flex', flexDirection: 'column' }}>
             {
                 _.map(rows, (row) => (
-                    <div style={{ display: 'flex', flexDirection: 'row', height: '100px', width: '250px'}}>
+                    <div style={{ display: 'flex', flexDirection: 'row', height: '60px', width: '250px'}}>
                         {
                             _.map(cols, (col) => (
-                                <div style={_.merge({ display: 'flex', flexDirection: 'column', border: '1px solid yellow', flex: 0.15}, fingerPostStyle(row, col, fingerPositions))}>{"  "}</div>
+                                <div style={_.merge({ display: 'flex', flexDirection: 'column', border: '1px solid pink', flex: 0.15}, fingerPostStyle(row, col, fingerPositions))}>{"  "}</div>
                             ))
                         }
                         <div style={{ display: 'flex', flexDirection: 'column', flex: 0.10}}>{row}</div>
