@@ -16,17 +16,9 @@ export default compose(
             console.log('ahit');
             if (chordIndex === totalChords - 1) {
                 setChordIndex(0);
+            } else {
+                setChordIndex(chordIndex + 1);
             }
-            setChordIndex(chordIndex++);
-        }
-    }),
-    lifecycle({
-        componentDidMount() {
-            const { shiftChord } = this.props;
-            this.interval = setInterval(() => shiftChord(), 1000);
-        },
-        componentWillUnmount() {
-            clearInterval(this.interval);
         }
     })
 )(DashBoard);
