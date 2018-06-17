@@ -11,7 +11,6 @@ const DashBoard = ({ currentChord, allChords, shiftChord  }) => (
             { _.map(allChords, (chord) => (chord === currentChord ? <div>{`${chord}<--`}</div> : <div>{chord}</div>)) }
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', flex: 0.25 }}>
-            
         <Timer callThis={() => shiftChord()}/>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', flex: 0.5 }}>

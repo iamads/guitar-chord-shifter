@@ -23,7 +23,7 @@ const stringXO = (string, chordInactiveStrings, chordOpenStrings) => {
 // }
 
 const fingerPostStyle = (row, col, fingerPos) => {
-    const style = {};
+    const style = { borderRightColor: 'pink', borderLeftColor: 'pink' };
 
     const fingersOnCurrentRow = _.filter(fingerPos, (ff) =>  ff.fret === row);
     
@@ -37,8 +37,6 @@ const fingerPostStyle = (row, col, fingerPos) => {
 
     return style;
 }
-
-
 
 const FretBoard = ({ rows = [1, 2, 3, 4, 5, 6], cols = [ 1, 2 , 3, 4, 5 ], inactive = chordsInactiveStrings, open = chordsOpenStrings, fingerPositions = fingerPos }) => (
     <div>
