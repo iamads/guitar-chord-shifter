@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import FretBoard from '../fretBoard';
-import Chords from '../../constants/majorChords';
+import Chords from '../../constants/chords';
 import Timer from '../timer';
 // <Timer callThis={() => console.log('wtf is going on')}/>
 // <button onClick={() => shiftChord()}>Shift</button>

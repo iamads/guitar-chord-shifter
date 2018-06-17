@@ -31,7 +31,7 @@ export default {
     },
 
     D: {
-        inactive: { E: false, A: false, D: false, G: false, B: false, Eh: false },
+        inactive: { E: true, A: false, D: false, G: false, B: false, Eh: false },
         open: { E: false, A: true, D: true, G: false, B: false, Eh: false },
         fingerPos: [
             { fret: 2, string: 'Eh' },
@@ -65,7 +65,7 @@ export default {
 
     G: {
         inactive: { E: false, A: false, D: false, G: false, B: false, Eh: false },
-        open: { E: false, A: false, D: true, G: true, B: false, Eh: true },
+        open: { E: false, A: false, D: true, G: true, B: false, Eh: false },
         fingerPos: [
             { fret: 2, string: 'A' },
             { fret: 3, string: 'E' },
