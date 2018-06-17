@@ -38,7 +38,7 @@ const fingerPostStyle = (row, col, fingerPos) => {
     return style;
 }
 
-const FretBoard = ({ rows = [1, 2, 3, 4, 5, 6], cols = [ 1, 2 , 3, 4, 5 ], inactive = chordsInactiveStrings, open = chordsOpenStrings, fingerPositions = fingerPos }) => (
+const FretBoard = ({ rows = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], cols = [ 1, 2 , 3, 4, 5 ], inactive = chordsInactiveStrings, open = chordsOpenStrings, fingerPositions = fingerPos }) => (
     <div>
         <div style={{ display: 'flex', flexDirection: 'row', width: '250px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', flex: 0.15}}>E</div>
